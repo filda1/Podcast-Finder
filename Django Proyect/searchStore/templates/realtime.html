@@ -1,0 +1,670 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#B82F00" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#B82F00">
+<meta name="description" content="It&#x27;s like Google Analytics Real-Time, but for podcast episodes. These are the podcast episodes being listened via Listen Notes right now.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@listennotes">
+<meta name="twitter:title" content="Listen Real-Time: What podcast episodes are being listened NOW?">
+<meta name="twitter:description" content="It&#x27;s like Google Analytics Real-Time, but for podcast episodes. These are the podcast episodes being listened via Listen Notes right now.">
+<meta name="twitter:creator" content="@listennotes">
+<meta name="twitter:domain" content="listennotes.com">
+<meta property="og:type" content="product" />
+<meta property="og:title" content="Listen Real-Time: What podcast episodes are being listened NOW?" />
+<meta property="og:url" content="https://www.listennotes.com/realtime/" />
+<meta property="og:site_name" content="Listen Notes" />
+<meta property="og:description" content="It&#x27;s like Google Analytics Real-Time, but for podcast episodes. These are the podcast episodes being listened via Listen Notes right now." />
+<meta property="fb:app_id" content='1752178305105130' />
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MH2BF8G');</script>
+
+<meta property="og:image" content="https://cdn-images-1.listennotes.com/web/image/839fea0f5e284b62a83b291031676e4b.jpg">
+<link rel="image_src" href="https://cdn-images-1.listennotes.com/web/image/839fea0f5e284b62a83b291031676e4b.jpg" />
+<meta name="twitter:image" content="https://cdn-images-1.listennotes.com/web/image/839fea0f5e284b62a83b291031676e4b.jpg" />
+<meta name="referrer" content="origin">
+<meta name="apple-mobile-web-app-title" content="Listen Notes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://cdn-images-1.listennotes.com/">
+<link rel="preconnect" href="https://d3sv2eduhewoas.cloudfront.net">
+<link rel="preconnect" href="https://maxcdn.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://maxcdn.bootstrapcdn.com">
+<link rel="preconnect" href="https://cdn.carbonads.com">
+<link rel="preconnect" href="https://srv.carbonads.net">
+<link rel="preconnect" href="https://d.agkn.com">
+<link rel="preconnect" href="https://cdn.polyfill.io">
+<link rel="preconnect" href="https://www.paypal.com">
+<link rel="preconnect" href="https://checkout.stripe.com">
+<link rel="preconnect" href="https://js.stripe.com">
+<link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://stats.g.doubleclick.net">
+<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" as="style" type="text/css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+<link rel="preload" href="https://d3sv2eduhewoas.cloudfront.net/assets/v3/base_css_v3-2fc0b5f12588084b0988.bundle.css" as="style" type="text/css" />
+<link rel="preload" href="https://code.jquery.com/jquery-3.2.1.slim.min.js" as="script" type="text/javascript" crossorigin="anonymous" />
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" as="script" type="text/javascript" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" />
+<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" as="script" type="text/javascript" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" />
+<link rel="preload" href="https://d3sv2eduhewoas.cloudfront.net/assets/v3/base_js_v3-2fc0b5f12588084b0988.bundle.js" as="script" type="text/javascript" />
+<link rel="apple-touch-icon" sizes="180x180" href="/static/v3/img/logo/apple-touch-icon.png?v3=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/v3/img/logo/favicon-32x32.png?v3=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/v3/img/logo/favicon-16x16.png?v3=1">
+<link rel="manifest" href="/static/v3/img/logo/site.webmanifest?v3=1">
+<link rel="mask-icon" href="/static/v3/img/logo/safari-pinned-tab.svg?v3=1" color="#b82f00">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.listennotes.com/opensearch.xml" title="Listen Notes">
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.listennotes.com/",
+            "name": "Listen Notes",
+            "alternateName": "The best podcast search engine and podcast database",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.listennotes.com/search/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            },
+            "sameAs": [
+                "https://www.facebook.com/listennotes/",
+                "https://twitter.com/listennotes"
+            ],
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.listennotes.com/#primaryimage",
+                "url": "https://cdn-images-1.listennotes.com/web/image/1e96161023e04a95bd2f754c907587fc.png",
+                "width": 1024,
+                "height": 512,
+                "caption": "Listen Notes"
+            }
+        }
+
+        </script>
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://www.listennotes.com/",
+            "@id": "https://www.listennotes.com/#organization",
+            "name": "Listen Notes, Inc.",
+            "sameAs": [
+                "https://www.facebook.com/listennotes/",
+                "https://twitter.com/listennotes"
+            ],
+            "foundingDate": "2017",
+            "founders": [
+                {
+                    "givenName": "Wenbin",
+                    "familyName": "Fang"
+                }
+            ],
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://www.listennotes.com/#logo",
+              "url": "https://cdn-images-1.listennotes.com/web/image/776f23644387485291977e49dea90b71.png",
+              "width": "610",
+              "height": "610",
+              "caption": "Listen Notes"
+            }
+        }
+        </script>
+<link rel="canonical" href="https://www.listennotes.com/realtime/" />
+
+<meta name="google-site-verification" content="BtUtYiLJ_jY_IdRDfR4f1QGxyirk8UpIgLpYapoZS1k" />
+<meta name="msvalidate.01" content="439C3759D86FF265D8CFBB73B054F5F9" />
+<meta name="yandex-verification" content="fef7fe0c73e013cd" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link type="text/css" href="https://d3sv2eduhewoas.cloudfront.net/assets/v3/base_css_v3-2fc0b5f12588084b0988.bundle.css" rel="stylesheet" />
+<noscript id="deferred-styles">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossorigin="anonymous">
+    </noscript>
+<title>Listen Real-Time: What podcast episodes are being listened NOW?</title>
+<script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+
+      function real_ga(var1, var2, category, event) {
+        dataLayer.push({
+            'lnCategory': category,
+            'lnEvent': event
+        });
+      }
+    </script>
+<script type="text/javascript">
+		(function(){
+			var bsa_optimize=document.createElement('script');
+			bsa_optimize.type='text/javascript';bsa_optimize.async=true;
+			bsa_optimize.src='https://cdn-s2s.buysellads.net/pub/listennotes.js?'+(new Date()-new Date()%600000);
+			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa_optimize);
+		})();
+	</script>
+</head>
+<body class="ln-body">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH2BF8G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<input type="hidden" name="csrfmiddlewaretoken" value="VnTzWOO62w3DGxaNpAwMe87Q9QLuzIHzwzovT1ehIzNCaebfja8GXun2jbC3R4IY">
+<div class="ln-navbar-container" role="banner">
+<div class="row ln-navbar-top-container">
+<div class="col-lg-2 ln-navbar-col">
+<a href="/" title="Listen Notes: the best podcast search engine" aria-label="Listen Notes logo - Click to return to homepage">
+<img src="/static/v3/img/logo/home-horizontal-logo-mobile.jpg" alt="Listen Notes: best podcast search engine & database" class="ln-navbar-logo" />
+</a>
+</div>
+<div class="col-lg-6 ln-col">
+<div class="ln-navbar-mobile-top-row">
+<div class="ln-navbar-mobile-logo-container">
+<a href="/" title="Listen Notes: the best podcast search engine" aria-label="Listen Notes logo">
+<img src="/static/v3/img/logo/home-horizontal-logo-mobile.jpg" alt="Listen Notes: best podcast search engine & database" class="ln-navbar-logo" />
+</a>
+</div>
+<div class="ln-navbar-mobile-menu-container">
+<div role="navigation" aria-label="Top navigation menu">
+<a href="/listen/" class="ln-navbar-top-link" aria-label="Listen Later - podcast playlists" onClick="real_ga('send', 'event', 'Top nav listen later', 'Top nav listen later')">Listen Later</a>
+<a href="/api/" class="ln-navbar-top-link" aria-label="Podcast API" onClick="real_ga('send', 'event', 'Top nav api', 'Top nav api')">
+API
+</a>
+<a href="#" class="ln-navbar-top-link" data-toggle="dropdown" aria-haspopup="true" aria-label="More menu popup" aria-expanded="false" onClick="real_ga('send', 'event', 'Top nav more', 'Top nav more')">
+<i class="fas fa-ellipsis-h"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<div class="dropdown-caret">
+<span class="caret-outer"></span>
+<span class="caret-inner"></span>
+</div>
+<h6 class="dropdown-header">TOOLS</h6>
+<a class="dropdown-item" href="/clips/">
+<i class="fas fa-cut"></i> Listen Clips
+</a>
+<a class="dropdown-item" href="/alerts/">
+<i class="fas fa-bell"></i> Listen Alerts
+</a>
+<a class="dropdown-item" href="/datasets/">
+<i class="fas fa-database"></i> Listen Datasets
+</a>
+<div class="dropdown-divider"></div>
+<h6 class="dropdown-header">DISCOVER</h6>
+<a class="dropdown-item" href="/community/">
+Community
+</a>
+<a class="dropdown-item" href="/realtime/">
+Real-Time
+</a>
+<a class="dropdown-item" href="/explorer/">
+Explorer
+</a>
+<a class="dropdown-item" href="/best-podcasts/">
+Best Podcasts
+</a>
+<a class="dropdown-item" href="/hot-podcasts/">
+Hot Podcasts
+</a>
+<a class="dropdown-item" href="/curated-podcasts/">
+Curated Podcasts
+</a>
+<a class="dropdown-item" href="/classifieds/">
+Classified Ads
+</a>
+<a class="dropdown-item" href="/interviews/">
+Podcaster Interviews
+</a>
+<a class="dropdown-item" href="/podcast-academy/">
+Podcast Academy
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="/about/">
+About Listen Notes
+</a>
+</div>
+<span class="ln-navbar-vert" aria-hidden="true">&vert;</span>
+<a href="#" class="ln-navbar-top-link" data-id="login-nav-link" aria-label="Login with Google, Facebook, Twitter or Email">Login</a>
+</div>
+</div>
+</div>
+<div class="input-group ln-search-input-container" id="ln-placeholder-search-bar">
+<input type="text" class="form-control ln-search-input" placeholder="Trending: &quot;Andrew Yang&quot;" aria-label="people, places, topics..." value="">
+<div class="input-group-append">
+<button class="btn btn-primary" type="button">
+<i class="fas fa-search"></i>
+</button>
+</div>
+</div>
+<div id="autocomplete-app" data-first-trending-term="&quot;Andrew Yang&quot;" data-auto-focus="false" style="display:none"></div>
+</div>
+<div class="col-lg-4 ln-navbar-col">
+<div role="navigation" aria-label="Top navigation menu">
+<a href="/listen/" class="ln-navbar-top-link" aria-label="Listen Later - podcast playlists" onClick="real_ga('send', 'event', 'Top nav listen later', 'Top nav listen later')">Listen Later</a>
+<a href="/api/" class="ln-navbar-top-link" aria-label="Podcast API" onClick="real_ga('send', 'event', 'Top nav api', 'Top nav api')">
+API
+</a>
+<a href="#" class="ln-navbar-top-link" data-toggle="dropdown" aria-haspopup="true" aria-label="More menu popup" aria-expanded="false" onClick="real_ga('send', 'event', 'Top nav more', 'Top nav more')">
+<i class="fas fa-ellipsis-h"></i>
+</a>
+<div class="dropdown-menu dropdown-menu-right">
+<div class="dropdown-caret">
+<span class="caret-outer"></span>
+<span class="caret-inner"></span>
+</div>
+<h6 class="dropdown-header">TOOLS</h6>
+<a class="dropdown-item" href="/clips/">
+<i class="fas fa-cut"></i> Listen Clips
+</a>
+<a class="dropdown-item" href="/alerts/">
+<i class="fas fa-bell"></i> Listen Alerts
+</a>
+<a class="dropdown-item" href="/datasets/">
+<i class="fas fa-database"></i> Listen Datasets
+</a>
+<div class="dropdown-divider"></div>
+<h6 class="dropdown-header">DISCOVER</h6>
+<a class="dropdown-item" href="/community/">
+ Community
+</a>
+<a class="dropdown-item" href="/realtime/">
+Real-Time
+</a>
+<a class="dropdown-item" href="/explorer/">
+Explorer
+</a>
+<a class="dropdown-item" href="/best-podcasts/">
+Best Podcasts
+</a>
+<a class="dropdown-item" href="/hot-podcasts/">
+Hot Podcasts
+</a>
+<a class="dropdown-item" href="/curated-podcasts/">
+Curated Podcasts
+</a>
+<a class="dropdown-item" href="/classifieds/">
+Classified Ads
+</a>
+<a class="dropdown-item" href="/interviews/">
+Podcaster Interviews
+</a>
+<a class="dropdown-item" href="/podcast-academy/">
+Podcast Academy
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="/about/">
+About Listen Notes
+</a>
+</div>
+<span class="ln-navbar-vert" aria-hidden="true">&vert;</span>
+<a href="#" class="ln-navbar-top-link" data-id="login-nav-link" aria-label="Login with Google, Facebook, Twitter or Email">Login</a>
+</div>
+</div>
+</div>
+<div class="ln-mobile-only">
+</div>
+</div>
+<div class="ln-body-container">
+<div class="row ln-below-search-bar-row">
+<div class="col-lg-2"></div>
+<nav class="col-lg-10 ln-col ln-below-search-bar-nav-tab-container ln-horizontal-scroll" aria-label="Discover navigation menu">
+<a href="/community/" title="Community" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-users"></i> COMMUNITY</a>
+<a href="/realtime/" title="Real-Time" class="ln-below-search-bar-nav-item ln-below-search-bar-nav-item-active">
+<i class="fas fa-bolt"></i> REAL-TIME</a>
+<a href="/explorer/" title="Listen Explorer" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-compass"></i> EXPLORER</a>
+<a href="/best-podcasts/" title="Best Podcasts" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-star"></i> BEST</a>
+<a href="/hot-podcasts/" title="Hot Podcasts" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-fire"></i> HOT
+</a>
+<a href="/curated-podcasts/" title="Curated Podcasts" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-book"></i> CURATED
+</a>
+<a href="/podcast-playlists/" title="Podcast Playlists from the Listen Notes Community" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-list"></i> PLAYLISTS
+</a>
+<a href="/classifieds/" title="Classifieds" class="ln-below-search-bar-nav-item ">
+<i class="far fa-newspaper"></i> CLASSIFIEDS
+</a>
+<a href="/interviews/" title="Podcaster Interviews" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-microphone-alt"></i> INTERVIEWS
+</a>
+<a href="/podcast-academy/" title="Podcast Academy" class="ln-below-search-bar-nav-item ">
+<i class="fas fa-book"></i> ACADEMY
+</a>
+</nav>
+</div>
+<div class="row ln-content-header-section">
+<div class="col-lg-2"></div>
+<div class="col-lg-6 ln-col">
+<h1 class="ln-page-l1-title">
+Listen Real-Time
+</h1>
+<div class="ln-right-margin-2x">
+It's like Google Analytics Real-Time, but for podcast episodes. These are the podcast episodes being listened to via Listen Notes right now.
+</div>
+<div style="display: none;" id="ln-chrome-ext" class="ln-top-margin-10x">
+<a href="https://chrome.google.com/webstore/detail/listen-notes-for-chrome/mgfcbojdgmjgafiihonneempohjhdjge" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" onClick="real_ga('send', 'event', 'Click Browser Ext Promo', 'Click Chrome Promo');" aria-label="Download Listen Notes Chrome extension">
+<span class="ln-secondary-btn-text"><i class="fab fa-chrome ln-right-padding-1x"></i> Listen Notes for Chrome</span>
+</a>
+<div>
+<small class="text-muted">The fastest way to find podcasts!</small>
+</div>
+</div>
+<div style="display: none;" id="ln-edge-ext" class="ln-top-margin-10x">
+<a href="https://microsoftedge.microsoft.com/addons/detail/eboeelepapjbeocfhamnjjpeoooepjjj" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" onClick="real_ga('send', 'event', 'Click Browser Ext Promo', 'Click Edge Promo');" aria-label="Download Microsoft Edge addon">
+<span class="ln-secondary-btn-text">
+<img src="https://cdn-images-1.listennotes.com/web/image/4e568f93c6a9439f97fc38571340774c.png" alt="Microsoft Edge logo" width="20" class="ln-right-padding-1x" />
+Listen Notes for Edge</span>
+</a>
+<div>
+<small class="text-muted">The fastest way to find podcasts!</small>
+</div>
+</div>
+</div>
+<div class="col-lg-3 ln-col">
+<div class="ln-sidebar-card ln-desktop-only">
+<div id="ln-desktop-sidebar" class="ln-bottom-margin-5x text-center">
+<div class="ln-sidebar-ads ln-left-padding-1x">
+<a href="/ads/" rel="nofollow" class="ln-ads-attribution text-left">Advertisement</a>
+
+<div id="bsa-zone_1587058446801-7_123456" class="ln-gpt-container"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row ln-content-body-section ln-grey-bg">
+<div class="col-lg-1"></div>
+<div class="col-lg-10 ln-col">
+<div class="ln-mobile-only" id="ln-top-banner2">
+<div class="ln-home-feed-ad ln-top-banner2">
+<div class="ln-top-ad text-center">
+
+<a href="/ads/" rel="nofollow" class="ln-ads-attribution text-left">Advertisement</a>
+
+<div id="bsa-zone_1587057798270-1_123456" class="ln-gpt-container"></div>
+</div>
+</div>
+</div>
+<div id="ln-spinner-loader" class="text-center">
+<div class="lds-ring">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<div id="react-app"></div>
+</div>
+</div>
+<div id="audio-player"></div>
+</div>
+<footer class="ln-footer-container">
+<div class="row ln-bottom-margin-5x">
+<div class="col-md-12 text-center">
+<div>
+<a href="/about/" class="ln-footer-link" title="About Listen Notes, the best podcast search engine" onClick="real_ga('send', 'event', 'About link footer', 'Footer');">About</a>
+<a href="/submit/" class="ln-footer-link" onClick="real_ga('send', 'event', 'Submit podcast', 'Footer');">Submit</a>
+<a href="/labs/" class="ln-footer-link" title="Some experimental projects by Listen Notes">Labs</a>
+<a href="/business/" class="ln-footer-link" title="Partner with Listen Notes." onClick="real_ga('send', 'event', 'Business link footer', 'Footer');">Business</a>
+<a href="/integrations/" class="ln-footer-link" title="Access to all podcasts and episodes right from your own websites and apps">Integrations</a>
+<a href="/terms/" class="ln-footer-link" title="Terms of Services" rel="nofollow" onClick="real_ga('send', 'event', 'Terms link footer', 'Footer');">Legal</a>
+<a href="/help/" class="ln-footer-link" title="Listen Notes Help Center" onClick="real_ga('send', 'event', 'Help link footer', 'Footer');">Help</a>
+<a href="/podcast-stats/" class="ln-footer-link" title="Podcast Stats" onClick="real_ga('send', 'event', 'Stats link footer', 'Footer');">Stats</a>
+<a href="/blog/" class="ln-footer-link" title="The Official Listen Notes Blog" onClick="real_ga('send', 'event', 'Blog link footer', 'Footer');">Blog</a>
+</div>
+<div class="ln-footer-footnote text-center ln-top-margin-3x ln-bottom-margin-5x ln-footer-language-container">
+<a href="https://help.listennotes.com/en/articles/3636974-how-to-help-translate-listennotes-com-into-other-languages" target="_blank" title="Help translate listennotes.com into your language" aria-label="Help translate listennotes.com into your language">
+<i class="fas fa-globe"></i>
+</a>
+<form action="/i18n/" method="post" class="form">
+<input name="next" type="hidden" value="">
+<select name="language" onchange="this.form.submit()" class="custom-select ln-footer-language" aria-label="Select a language">
+<option value="en">
+English (en)
+</option>
+<option value="ar">
+العربيّة (ar)
+</option>
+<option value="bn">
+বাংলা (bn)
+</option>
+<option value="da">
+dansk (da)
+</option>
+<option value="de">
+Deutsch (de)
+</option>
+<option value="es">
+español (es)
+</option>
+<option value="et">
+eesti (et)
+</option>
+<option value="fa">
+فارسی (fa)
+</option>
+<option value="fi">
+suomi (fi)
+</option>
+<option value="fr">
+français (fr)
+</option>
+<option value="he">
+עברית (he)
+</option>
+<option value="hi">
+हिंदी (hi)
+</option>
+<option value="id">
+Bahasa Indonesia (id)
+</option>
+<option value="it">
+italiano (it)
+</option>
+<option value="ja">
+日本語 (ja)
+</option>
+<option value="ko">
+한국어 (ko)
+</option>
+<option value="ms">
+Melayu (ms)
+</option>
+<option value="my">
+မြန်မာဘာသာ (my)
+</option>
+<option value="nl">
+Nederlands (nl)
+ </option>
+<option value="pl">
+polski (pl)
+</option>
+<option value="pt">
+Português (pt)
+</option>
+<option value="ru">
+Русский (ru)
+</option>
+<option value="sv">
+svenska (sv)
+</option>
+<option value="th">
+ภาษาไทย (th)
+</option>
+<option value="tl">
+Filipino (tl)
+</option>
+<option value="tr">
+Türkçe (tr)
+</option>
+<option value="vi">
+Tiếng Việt (vi)
+</option>
+<option value="zh-hans">
+简体中文 (zh-hans)
+</option>
+<option value="zh-hant">
+繁體中文 (zh-hant)
+</option>
+</select>
+</form>
+</div>
+<a href="/cdn-cgi/l/email-protection#6c04090000032c00051f180902020318091f420f0301" title="Talk to the founder" class="ln-footer-link ln-footer-email-link " aria-label="Talk to the founder of Listen Notes via email: hello@listennotes.com">
+<i class="fas fa-envelope"></i>
+<span class="__cf_email__" data-cfemail="365e535a5a59765a5f4542535858594253451855595b">[email&#160;protected]</span>
+</a>
+<div class="ln-footer-footnote text-center ln-top-margin-3x">
+<div>© 2020 &nbsp; Listen Notes, Inc.</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="modal" tabindex="-1" role="dialog" id="login-modal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="ln-modal-header">
+<a href="#" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</a>
+</div>
+<div class="modal-body ln-modal-body">
+<div id="login-modal-explain"></div>
+<div class="ln-login-body text-center">
+<button class="loginBtn loginBtn--facebook" data-action="login-button" data-login-url="/accounts/facebook/login/">
+Continue with Facebook
+</button>
+<button class="loginBtn loginBtn--google" data-action="login-button" data-login-url="/accounts/google/login/?next=%2Frealtime%2F&method=oauth2">
+Continue with Google
+</button>
+<button class="loginBtn loginBtn--twitter" data-action="login-button" data-login-url="/accounts/twitter/login/?next=%2Frealtime%2F&method=oauth2">
+Continue with Twitter
+</button>
+<div class="form-text ln-login-modal-hint">
+We’ll never sell your personal information.
+</div>
+<div id="email-login-app"></div>
+</div>
+</div>
+<div class="modal-footer ln-login-modal-footer">
+<div class="ln-login-modal-footer-row">
+After logging in, you agree to accept
+<a href="/terms?s=login">Terms of Services</a>
+and <a href="/privacy?s=login">Privacy Policies</a>.
+</div>
+<div class="ln-login-modal-footer-row">
+Questions? <a href="/cdn-cgi/l/email-protection#9ef6fbf2f2f1def2f7edeafbf0f0f1eafbedb0fdf1f3"><span class="__cf_email__" data-cfemail="7d15181111123d11140e091813131209180e531e1210">[email&#160;protected]</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal" tabindex="-1" role="dialog" id="general-modal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="ln-modal-header">
+<a href="#" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</a>
+</div>
+<div class="modal-body">
+<div id="general-modal-title"></div>
+<div id="general-modal-body"></div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="trending-queries" type="application/json">
+        [{"query": "pandemic", "sort_by_date": false}, {"query": "\"Steven Levy\"", "sort_by_date": true}, {"query": "Michael Bloomberg", "sort_by_date": false}, {"query": "coronavirus", "sort_by_date": false}, {"query": "\"Andrew Yang\"", "sort_by_date": false}, {"query": "Iran", "sort_by_date": false}, {"query": "\"David Stern\"", "sort_by_date": false}, {"query": "Luka Doncic", "sort_by_date": false}, {"query": "\u201cPromo code\u201d", "sort_by_date": true}, {"query": "Hillary Clinton", "sort_by_date": false}]
+    </script>
+<script id="user-data" type="application/json">
+        {"current_path": "%2Frealtime%2F", "base_url": "https://www.listennotes.com", "lang_code": "en-us"}
+    </script>
+<script id="current-ads" type="application/json">
+        {"6": [{"ad_uuid": "11aef0f6edd748b3a7b131434368e9ae", "text": "You\u2019re getting 2 free Audible books. MORE: 2 Audible Originals and 1 audiobook every month. Listen in the Audible app.", "ad_link": "https://www.listennotes.com/agi/11aef0f6edd748b3a7b131434368e9ae/link/", "ad_image": "https://cdn-images-1.listennotes.com/agi/image/a931957c9041497e892fb1742ef7f358.jpg", "ad_type": 6, "button_text": "Click to try Audible FREE \u2192", "ios_url": null, "android_url": null, "ad_status": 1, "targeting_genres": null, "url": "https://amzn.to/2rmtfBb", "budget": 100, "name": null}], "4": [{"ad_uuid": "7ed822139fca465a9c5cb38d5b3506c0", "text": "Search and export podcast meta data to CSV, with rss, email and social profiles. Best for marketing, PR, sales, journalism, and more!", "ad_link": "https://www.listennotes.com/agi/7ed822139fca465a9c5cb38d5b3506c0/link/", "ad_image": "https://cdn-images-1.listennotes.com/agi/image/bcd418f24ebd4ef5aff74a19fa9c78b4.jpg", "ad_type": 4, "button_text": "Learn More \u2192", "ios_url": null, "android_url": null, "ad_status": 1, "targeting_genres": null, "url": "https://www.listennotes.com/datasets/", "budget": 100, "name": null}]}
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script>
+    function gettext(message) { return message }
+    function interpolate(fmt, obj, named) {
+      if (named) {
+        return fmt.replace(/%\(\w+\)s/g, function(match){return String(obj[match.slice(2,-2)])});
+      } else {
+        return fmt.replace(/%s/g, function(match){return String(obj.shift())});
+      }
+    }
+    </script>
+<script id="ln-browser-ext-json" type="application/json">
+</script>
+<script type="text/javascript" src="https://d3sv2eduhewoas.cloudfront.net/assets/v3/base_js_v3-2fc0b5f12588084b0988.bundle.js"></script>
+<script type="text/javascript" src="https://d3sv2eduhewoas.cloudfront.net/assets/v3/now_js-2fc0b5f12588084b0988.bundle.js"></script>
+
+<script>
+  console.log("%c%s", 'background: #1A72EC; line-height: 170%; color: white; display: block;',
+    'Hey, there! Want to know how Listen Notes is built?\n' +
+    'Let me tell you: Python/Django, PostgreSQL, RabbitMQ, Celery, Elasticsearch, React.\n' +
+    'Want to learn more? hello@listennotes.com');
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/static/v3/sw.js').then(function(registration) {
+      
+    }, function(err) {
+      
+    });
+  });
+}
+</script>
+<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<script>
+(function(){
+  if(typeof _bsa !== 'undefined' && _bsa) {
+    // format, zoneKey, segment:value, options
+    _bsa.init('default', 'CK7DVK7Y', 'placement:listennotescom', {
+        target: '#ln_bsa_banner',
+    align: 'horizontal',
+        // align: 'vertical',
+        disable_css: true,
+        platforms: ['desktop', 'mobile'],
+     });
+
+
+    
+      
+    _bsa.init('flexbar', 'CK7DVK7U', 'placement:listennotescom', {
+      platforms: ['desktop']
+     });
+        
+    
+
+    
+  }
+ })();
+</script>
+</body>
+</html>
