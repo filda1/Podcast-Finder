@@ -42,6 +42,13 @@ INSTALLED_APPS = [
     'apps.realtime',
     'apps.best',
     'apps.aboutpodcasts',
+    'apps.curatedpodcast',
+    'apps.playlists',
+    'apps.classifieds',
+    'apps.hot',
+    'apps.interviews',
+    'apps.readi',
+
       
 ]
 

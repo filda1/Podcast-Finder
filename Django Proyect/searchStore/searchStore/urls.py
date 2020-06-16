@@ -24,4 +24,10 @@ urlpatterns = [
     path('realtime', include('apps.realtime.urls')),
     path('bestpodcasts', include('apps.best.urls')),
     path('aboutpodcasts', include('apps.aboutpodcasts.urls')),
+    path('curatedpodcasts', include('apps.curatedpodcast.urls')),
+    path('playlists', include('apps.playlists.urls')),
+    path('classifieds', include('apps.classifieds.urls')),
+    path('hot', include('apps.hot.urls')),
+    path('interviews', include('apps.interviews.urls')),
+    path('readi', include('apps.readi.urls')),
 ]

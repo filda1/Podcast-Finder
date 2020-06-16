@@ -1,0 +1,568 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="row ln-content-header-section">
+<div class="col-lg-2"></div>
+ <div class="col-lg-6 ln-col">
+<h1 class="ln-page-l1-title">
+Hot Podcasts
+</h1>
+<div class="ln-page-section-paragraph">
+Based on user activities on yesterday.
+</div>
+<div class="ln-page-section-paragraph ln-hot-podcasts-date-picker">
+<div class="input-group mb-3">
+<input class="form-control" type="date" value="2020-06-13" min="2018-02-06" max="2020-06-14" id="datepicker" />
+<div class="input-group-append">
+<button class="btn btn-secondary" id="pick-date-button" type="button">
+Go
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 ln-col">
+<div class="ln-channel-episode-action-container" id="placeholder-page-share-button">
+<div class="ln-channel-episode-action-button-container">
+<a href="/listen/" title="Create your own podcast list" class="btn btn-primary ln-animate-grow ln-channel-episode-action-button">
+<span class="ln-primary-btn-text"><i class="fas fa-list"></i> CREATE</span>
+</a>
+</div>
+<div class="ln-channel-episode-action-button-container">
+<a title="Share with friends" class="btn btn-secondary ln-animate-grow ln-channel-episode-action-button">
+<i class="fas fa-share"></i> SHARE
+</a>
+</div>
+</div>
+<div id="page-share-button" class="ln-channel-episode-action-outer-container" data-primary-url="/listen/" data-primary-title="Create your own podcast list" data-primary-button-text="CREATE" data-primary-icon="fas fa-list" data-url="https://www.listennotes.com/hot-podcasts/" data-text="Hot podcasts on yesterday"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-2"></div>
+<nav class="col-lg-10 ln-col ln-nav-tab-container ln-horizontal-scroll">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a href="#episodes" class="nav-link active" data-toggle="tab">
+<i class="fas fa-play"></i> EPISODES</a>
+</li>
+<li class="nav-item">
+<a href="#podcasts" class="nav-link" data-toggle="tab">
+<i class="fas fa-podcast"></i> PODCASTS
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="ln-content-body-section ln-grey-bg">
+<div class="row ">
+<div class="col-lg-2"></div>
+<div class="col-lg-6 ln-col tab-content">
+<div class="ln-mobile-only" id="ln-top-banner2">
+<div class="ln-home-feed-ad ln-top-banner2">
+<div class="ln-top-ad text-center">
+
+<a href="/ads/" rel="nofollow" class="ln-ads-attribution text-left">Advertisement</a>
+
+<div id="bsa-zone_1587057798270-1_123456" class="ln-gpt-container"></div>
+</div>
+</div>
+</div>
+<div class="tab-pane active" id="episodes" role="tabpanel">
+<div class="ln-channel-episode-detail-card">
+<div class="ln-channel-episode-card-body">
+<div>
+<a href="https://www.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW/" title="Kit Club" onClick="real_ga('send', 'event', 'Home trend channel image', 'Trend channel Kit Club');">
+<img src="https://cdn-images-1.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW.300x300.jpg" alt="Kit Club Ep 004: Sampdoria Home 1993/94" class="ln-episode-image" />
+</a>
+</div>
+<div class="ln-channel-episode-card-info-container">
+<h3 class="ln-channel-episode-card-info-title">
+<a href="https://www.listennotes.com/podcasts/kit-club/kit-club-ep-004-sampdoria-IkCe2FU4SDE/" title="Kit Club Ep 004: Sampdoria Home 1993/94" onClick="real_ga('send', 'event', 'Home trend episode title', 'Trend episode Kit Club Ep 004: Sampdoria Home 1993/94');">
+Kit Club Ep 004: Sampdoria Home 1993/94
+</a>
+</h3>
+<div class="ln-channel-episode-card-info-subtitle">
+<time title="2018-05-16T12:46:18-07:00" datetime="2018-05-16T12:46:18-07:00" class="ln-date-text">
+May 16, 2018
+</time>
+</div>
+</div>
+
+</div>
+<div class="ln-channel-detailed-card-description">
+In this episode of Kit Club, Chris and Steve talk about Sampdoria's 1993/94 home kit. Subscribe: Apple Podcasts&nbsp;// Other
+</div>
+<div>
+<div data-type="episode-audio-player" data-audio="https://www.listennotes.com/e/p/35f8a7c0c958446d91c0310c89e64077/" data-episode-uuid="35f8a7c0c958446d91c0310c89e64077" data-title="Kit Club Ep 004: Sampdoria Home 1993/94" data-duration="00:15:22" data-image="https://cdn-images-1.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW.300x300.jpg" data-channel-title="Kit Club">
+</div>
+</div>
+<div class="ln-episode-toolbar-container" data-type="placeholder-episode-toolbar">
+<div class="ln-episode-playbutton-timestamp">
+<a href="#" class="ln-episode-playbutton ln-animate-grow">
+<i class="fas fa-play-circle"></i>
+</a>
+<div class="ln-episode-timestamp">
+00:15:22
+</div>
+</div>
+<div class="ln-episode-share-save">
+<a class="btn btn-secondary btn-sm ln-action-button ln-animate-grow">
+<i class="fas fa-share"></i> SHARE
+</a>
+<a class="btn btn-secondary btn-sm ln-action-button ln-animate-grow">
+<i class="fas fa-bookmark"></i> SAVE
+</a>
+<a class="btn btn-secondary btn-sm ln-action-button ln-animate-grow">
+<i class="fas fa-ellipsis-h"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="tab-pane" id="podcasts" role="tabpanel">
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW/" title="Kit Club">
+<img src="https://cdn-images-1.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW.300x300.jpg" alt="Top 10 podcasts: Kit Club" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW/" title="Kit Club">
+Kit Club
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Sphinx Football">
+By
+<a href="/search/?q=%22Sphinx%20Football%22&scope=podcast&only_in=author" title="See all podcasts produced by Sphinx Football" rel="nofollow">Sphinx Football</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Kit Club" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of Kit Club" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Kit Club" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of Kit Club" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of Kit Club" href="#" data-id="login-nav-link" title="Email of Kit Club" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Kit Club" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="b0a81f2716104c849932b08d5123a1f3" data-channel-title="Kit Club" data-twitter="sphinxftbl" data-embed-url="https://www.listennotes.com/podcasts/kit-club-sphinx-football-NZpP1dfz0gW/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+A podcast about football kits
+</div>
+</div>
+
+
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+
+
+</div>
+
+
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="84dac069e2de4fcfad003ab67b5fab53" data-channel-title="The Knowledge Project with Shane Parrish" data-twitter="farnamstreet" data-embed-url="https://www.listennotes.com/podcasts/the-knowledge-project-with-shane-parrish-RoXxgNCyDmE/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Master the best of what other people have already figured out. Learn more at https://fs.blog/podcast
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/reiner-wein-der-politische-podcast-aus-wien-n-VXrH4QA0w/" title="Reiner Wein | Der politische Podcast aus Wien">
+<img src="https://cdn-images-1.listennotes.com/podcasts/reiner-wein-der-politische-podcast-aus-wien-LHWI34wchJD-n-VXrH4QA0w.300x300.jpg" alt="Top 10 podcasts: Reiner Wein | Der politische Podcast aus Wien" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/reiner-wein-der-politische-podcast-aus-wien-n-VXrH4QA0w/" title="Reiner Wein | Der politische Podcast aus Wien">
+Reiner Wein | Der politische Podcast aus Wien
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Gunther Sosna und Hermann Böhm">
+By
+<a href="/search/?q=%22Gunther%20Sosna%20und%20Hermann%20B%C3%B6hm%22&scope=podcast&only_in=author" title="See all podcasts produced by Gunther Sosna und Hermann Böhm" rel="nofollow">Gunther Sosna und Hermann Böhm</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Reiner Wein | Der politische Podcast aus Wien" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of Reiner Wein | Der politische Podcast aus Wien" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of Reiner Wein | Der politische Podcast aus Wien" href="#" data-id="login-nav-link" title="Email of Reiner Wein | Der politische Podcast aus Wien" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Reiner Wein | Der politische Podcast aus Wien" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="a4d738385a8e4eaebb081b45cf285c84" data-channel-title="Reiner Wein | Der politische Podcast aus Wien" data-embed-url="https://www.listennotes.com/podcasts/reiner-wein-der-politische-podcast-aus-wien-n-VXrH4QA0w/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Es wird Zeit, genau zuzuhören, was sich unter der Grasnarbe tut. Praktisch alles ist vernetzt, alles ist smart und digital. Und was es noch nicht ist, wird es werden. Das gilt für Bildung und Medien genauso wie für Institutionen und die Wissenschaft…
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/the-tea-with-dee-dee-kosh-VbpfArHIdcM/" title="The Tea with Dee">
+<img src="https://cdn-images-1.listennotes.com/podcasts/the-tea-with-dee-fZo9pLJ4_Rg-VbpfArHIdcM.300x300.jpg" alt="Top 10 podcasts: The Tea with Dee" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/the-tea-with-dee-dee-kosh-VbpfArHIdcM/" title="The Tea with Dee">
+The Tea with Dee
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Dee Kosh">
+<a href="https://www.listennotes.com/podcasts/the-tea-with-dee-dee-kosh-VbpfArHIdcM/#podcaster" id="channel-claimed-badge">
+<div class="ln-channel-claimed-badge"><i class="fas fa-check-circle"></i></div>
+</a>
+<a href="/search/?q=%22Dee%20Kosh%22&scope=podcast&only_in=author" title="See all podcasts produced by Dee Kosh" rel="nofollow">Dee Kosh</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of The Tea with Dee" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of The Tea with Dee" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of The Tea with Dee" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of The Tea with Dee" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of The Tea with Dee" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="1d39dd6698fb42b98a2d3db69f454310" data-channel-title="The Tea with Dee" data-embed-url="https://www.listennotes.com/podcasts/the-tea-with-dee-dee-kosh-VbpfArHIdcM/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Brewing deep reportage, interviews, storytelling and anonymous guest-hosts to bring you the most revealing, saucy and compelling stories every week.Tune in every Sunday for your everyday gossip and current affairs, broken down and discussed raw, unc…
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/三五环-跟五环内的朋友聊聊天-后厂村的刘飞-McEJfV-062O/" title="三五环 | 跟五环内的朋友聊聊天">
+<img src="https://cdn-images-1.listennotes.com/podcasts/三五环-跟五环内的朋友聊聊天-X48NUCz0AY_-McEJfV-062O.300x300.jpg" alt="Top 10 podcasts: 三五环 | 跟五环内的朋友聊聊天" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/三五环-跟五环内的朋友聊聊天-后厂村的刘飞-McEJfV-062O/" title="三五环 | 跟五环内的朋友聊聊天">
+三五环 | 跟五环内的朋友聊聊天
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="后厂村的刘飞">
+By
+<a href="/search/?q=%22%E5%90%8E%E5%8E%82%E6%9D%91%E7%9A%84%E5%88%98%E9%A3%9E%22&scope=podcast&only_in=author" title="See all podcasts produced by 后厂村的刘飞" rel="nofollow">后厂村的刘飞</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of 三五环 | 跟五环内的朋友聊聊天" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of 三五环 | 跟五环内的朋友聊聊天" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of 三五环 | 跟五环内的朋友聊聊天" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of 三五环 | 跟五环内的朋友聊聊天" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of 三五环 | 跟五环内的朋友聊聊天" href="#" data-id="login-nav-link" title="Email of 三五环 | 跟五环内的朋友聊聊天" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of 三五环 | 跟五环内的朋友聊聊天" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+ </div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="959dc47c158f49079a5aa158d48c11e8" data-channel-title="三五环 | 跟五环内的朋友聊聊天" data-embed-url="https://www.listennotes.com/podcasts/三五环-跟五环内的朋友聊聊天-后厂村的刘飞-McEJfV-062O/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+可能是最发散的科技&amp;文化播客。跟三五环之间的朋友聊聊天...
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/governo-da-bahia-governo-da-bahia-UnYcbBiSKgQ/" title="Governo da Bahia">
+<img src="https://cdn-images-1.listennotes.com/podcasts/governo-da-bahia-governo-da-bahia-k81qdnm5fyR-UnYcbBiSKgQ.300x300.jpg" alt="Top 10 podcasts: Governo da Bahia" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/governo-da-bahia-governo-da-bahia-UnYcbBiSKgQ/" title="Governo da Bahia">
+Governo da Bahia
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Governo da Bahia">
+<a href="https://www.listennotes.com/podcasts/governo-da-bahia-governo-da-bahia-UnYcbBiSKgQ/#podcaster" id="channel-claimed-badge">
+<div class="ln-channel-claimed-badge"><i class="fas fa-check-circle"></i></div>
+</a>
+<a href="/search/?q=%22Governo%20da%20Bahia%22&scope=podcast&only_in=author" title="See all podcasts produced by Governo da Bahia" rel="nofollow">Governo da Bahia</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Governo da Bahia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of Governo da Bahia" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Governo da Bahia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of Governo da Bahia" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of Governo da Bahia" href="#" data-id="login-nav-link" title="Email of Governo da Bahia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Governo da Bahia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="1a7747c88d674cfca86c05d2234965e3" data-channel-title="Governo da Bahia" data-embed-url="https://www.listennotes.com/podcasts/governo-da-bahia-governo-da-bahia-UnYcbBiSKgQ/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Notícias, serviço e muito mais sobre as ações do Governo do Estado em toda a Bahia.
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/lehrjahre-louisa-plasberg-OMLtrFXCojc/" title="LEHRJAHRE">
+<img src="https://cdn-images-1.listennotes.com/podcasts/lehrjahre-louisa-plasberg-H0Ns_nMKLJ--OMLtrFXCojc.300x300.jpg" alt="Top 10 podcasts: LEHRJAHRE" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/lehrjahre-louisa-plasberg-OMLtrFXCojc/" title="LEHRJAHRE">
+LEHRJAHRE
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Louisa Plasberg">
+By
+<a href="/search/?q=%22Louisa%20Plasberg%22&scope=podcast&only_in=author" title="See all podcasts produced by Louisa Plasberg" rel="nofollow">Louisa Plasberg</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of LEHRJAHRE" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of LEHRJAHRE" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of LEHRJAHRE" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of LEHRJAHRE" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of LEHRJAHRE" href="#" data-id="login-nav-link" title="Email of LEHRJAHRE" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of LEHRJAHRE" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="fc5656f32a1947f19fdc6f19c2c2488a" data-channel-title="LEHRJAHRE" data-embed-url="https://www.listennotes.com/podcasts/lehrjahre-louisa-plasberg-OMLtrFXCojc/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Mitte 20, frisch von der Uni, hoch motiviert: Jetzt in den Job starten, die Welt retten, genug Geld verdienen, was „Sinnvolles“ tun und dabei ‘ne super Work-Life-Balance haben und glücklich sein. Soweit der Plan. Soweit die Fallhöhe. LEHRJAHRE macht…
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/tmp-series-remi-owadokun-vRw9WYS2mT4/" title="TMP Series">
+<img src="https://cdn-images-1.listennotes.com/podcasts/tmp-series-remi-owadokun-vRw9WYS2mT4.300x300.jpg" alt="Top 10 podcasts: TMP Series" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/tmp-series-remi-owadokun-vRw9WYS2mT4/" title="TMP Series">
+TMP Series
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Remi Owadokun">
+By
+<a href="/search/?q=%22Remi%20Owadokun%22&scope=podcast&only_in=author" title="See all podcasts produced by Remi Owadokun" rel="nofollow">Remi Owadokun</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of TMP Series" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of TMP Series" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of TMP Series" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of TMP Series" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of TMP Series" href="#" data-id="login-nav-link" title="Email of TMP Series" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of TMP Series" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="2796644ae1b949c3a60dbfa43fd707a2" data-channel-title="TMP Series" data-embed-url="https://www.listennotes.com/podcasts/tmp-series-remi-owadokun-vRw9WYS2mT4/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Podcast by Remi Owadokun
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/twista-this-week-in-startups-australia-mark-kmzW0t3xUAR/" title="TWISTA - This Week in Startups Australia">
+<img src="https://cdn-images-1.listennotes.com/podcasts/twista-this-week-in-startups-australia-mark-kmzW0t3xUAR.300x300.jpg" alt="Top 10 podcasts: TWISTA - This Week in Startups Australia" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/twista-this-week-in-startups-australia-mark-kmzW0t3xUAR/" title="TWISTA - This Week in Startups Australia">
+TWISTA - This Week in Startups Australia
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Mark Pesce">
+By
+<a href="/search/?q=%22Mark%20Pesce%22&scope=podcast&only_in=author" title="See all podcasts produced by Mark Pesce" rel="nofollow">Mark Pesce</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of TWISTA - This Week in Startups Australia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of TWISTA - This Week in Startups Australia" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of TWISTA - This Week in Startups Australia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of TWISTA - This Week in Startups Australia" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of TWISTA - This Week in Startups Australia" href="#" data-id="login-nav-link" title="Email of TWISTA - This Week in Startups Australia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of TWISTA - This Week in Startups Australia" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="f1c93358164f4afdbf5948ece62221c0" data-channel-title="TWISTA - This Week in Startups Australia" data-twitter="mpesce" data-embed-url="https://www.listennotes.com/podcasts/twista-this-week-in-startups-australia-mark-kmzW0t3xUAR/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+TWISTA helps your startup thrive with interviews and advice from the leading founders, investors, and thinkers in Australia's tech startup community.
+</div>
+</div>
+<div class="ln-channel-episode-detail-card">
+<div class="row">
+<div class="col-lg-10 ln-col ln-channel-detailed-card-info-container">
+<div>
+<a href="https://www.listennotes.com/podcasts/des-histoires-en-musique-delodie-fondacci-QWdluK97sjC/" title="Des histoires en musique d&#x27;Elodie Fondacci">
+<img src="https://cdn-images-1.listennotes.com/podcasts/des-histoires-en-musique-delodie-fondacci-QWdluK97sjC.300x300.jpg" alt="Top 10 podcasts: Des histoires en musique d&#x27;Elodie Fondacci" class="ln-channel-image" />
+</a>
+</div>
+<div class="ln-channel-detailed-card-header-info">
+<h2 class="ln-channel-episode-card-info-title ln-channel-detailed-card-title">
+<a href="https://www.listennotes.com/podcasts/des-histoires-en-musique-delodie-fondacci-QWdluK97sjC/" title="Des histoires en musique d&#x27;Elodie Fondacci">
+Des histoires en musique d'Elodie Fondacci
+</a>
+</h2>
+<div class="ln-channel-episode-card-info-subtitle ln-channel-simple-card-subtitle" title="Radio Classique">
+By
+<a href="/search/?q=%22Radio%20Classique%22&scope=podcast&only_in=author" title="See all podcasts produced by Radio Classique" rel="nofollow">Radio Classique</a>
+</div>
+<div class="ln-channel-detailed-card-links-container">
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Des histoires en musique d&#x27;Elodie Fondacci" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" title="iTune url of Des histoires en musique d&#x27;Elodie Fondacci" rel="noopener" target="_blank"><i class="fab fa-apple"></i> ITUNES</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Des histoires en musique d&#x27;Elodie Fondacci" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" rel="nofollow noreferrer noopener" title="RSS feed of Des histoires en musique d&#x27;Elodie Fondacci" target="_blank"><i class="fas fa-rss"></i> RSS</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" rel="nofollow noopener noreferrer" title="Website of Des histoires en musique d&#x27;Elodie Fondacci" href="#" data-id="login-nav-link" title="Email of Des histoires en musique d&#x27;Elodie Fondacci" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!" target="_blank">
+<i class="fas fa-link"></i> WEB</a>
+<a class="btn btn-secondary btn-sm ln-channel-episode-link-button ln-animate-grow" href="#" data-id="login-nav-link" title="Email of Des histoires en musique d&#x27;Elodie Fondacci" data-text="Please Log In to see this info. It's to prevent malicious computer programs from scraping this website. Thanks for your understanding!"><i class="fas fa-envelope"></i> EMAIL</a>
+</div>
+</div>
+</div>
+<div class="col-lg-2 ln-col">
+<div data-id="channel-toolbar" data-channel-uuid="78a9dfacc6ed4948a489b717bb880a7f" data-channel-title="Des histoires en musique d&#x27;Elodie Fondacci" data-embed-url="https://www.listennotes.com/podcasts/des-histoires-en-musique-delodie-fondacci-QWdluK97sjC/embed/" class="ln-channel-episode-action-outer-container"></div>
+</div>
+</div>
+<div class="ln-channel-detailed-card-description">
+Chaque mercredi, découvrez une nouvelle histoire racontée par Elodie Fondacci sur les plus belles musiques classiques.&nbsp;Pour enchanter les enfants et ceux qui le sont restés. A écouter sur radioclassique.fr et sur votre plateforme de podcasts ha…
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 ln-col">
+<div class="">
+<div class="ln-sidebar-card">
+<div class="ln-bottom-margin-5x text-center">
+<div class="ln-sidebar-ads ln-left-padding-1x">
+<a href="/ads/" rel="nofollow" class="ln-ads-attribution text-left">Advertisement</a>
+
+<div id="bsa-zone_1587058446801-7_123456" class="ln-gpt-container"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-sticky-sidebar">
+<div class="ln-channel-episode-detail-card ln-sidebar-card ln-channel-episode-sidebar-card">
+<h2 class="ln-channel-episode-detail-card-title">
+CLASSIFIEDS
+<a title="View all podcast classified ads" class="ln-left-padding-3x" href="/classifieds/">
+<i class="fas fa-angle-double-right"></i>
+</a>
+</h2>
+<div id="ln-sidebar-classifieds-placeholder">
+<div class="FB-Loading-Card ln-recommendation-placeholder-card">
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<div class="FB-Loading-Card ln-recommendation-placeholder-card">
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<div class="FB-Loading-Card ln-recommendation-placeholder-card">
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div id="ln-sidebar-classifieds-app" data-params="{}"></div>
+</div>
+<div class="ln-channel-episode-detail-card ln-sidebar-card ln-channel-episode-sidebar-card">
+<h2 class="ln-channel-episode-detail-card-title">
+PLAYLISTS FROM COMMUNITY
+<a title="View all featured playlists" class="ln-left-padding-3x" href="/podcast-playlists/">
+ <i class="fas fa-angle-double-right"></i>
+</a>
+</h2>
+<div id="ln-sidebar-playlists-placeholder">
+<div class="FB-Loading-Card ln-recommendation-placeholder-card">
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<div class="FB-Loading-Card ln-recommendation-placeholder-card">
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<div class="FB-Loading-Card ln-recommendation-placeholder-card">
+<div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div id="ln-sidebar-playlists-app" data-params=""></div>
+</div>
+<div class="text-center">
+<div style="display: none;" id="ln-chrome-ext" class="ln-top-margin-10x">
+<a href="https://chrome.google.com/webstore/detail/listen-notes-for-chrome/mgfcbojdgmjgafiihonneempohjhdjge" target="_blank" rel="noopener noreferrer" class="btn btn-primary" onClick="real_ga('send', 'event', 'Click Browser Ext Promo', 'Click Chrome Promo');" aria-label="Download Listen Notes Chrome extension">
+<span class="ln-primary-btn-text"><i class="fab fa-chrome ln-right-padding-1x"></i> Listen Notes for Chrome</span>
+</a>
+<div>
+<small class="text-muted">The fastest way to find podcasts!</small>
+</div>
+</div>
+<div style="display: none;" id="ln-edge-ext" class="ln-top-margin-10x">
+<a href="https://microsoftedge.microsoft.com/addons/detail/eboeelepapjbeocfhamnjjpeoooepjjj" target="_blank" rel="noopener noreferrer" class="btn btn-primary" onClick="real_ga('send', 'event', 'Click Browser Ext Promo', 'Click Edge Promo');" aria-label="Download Microsoft Edge addon">
+<span class="ln-primary-btn-text">
+<img src="https://cdn-images-1.listennotes.com/web/image/4e568f93c6a9439f97fc38571340774c.png" alt="Microsoft Edge logo" width="20" class="ln-right-padding-1x" />
+Listen Notes for Edge</span>
+</a>
+<div>
+<small class="text-muted">The fastest way to find podcasts!</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="audio-player"></div>
+</div>
+
+{% endblock %}
