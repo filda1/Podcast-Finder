@@ -19,7 +19,7 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('apps.searchresult.urls')),
+    path('', include('apps.searchresult.urls')),    # ============================> Pagina Principal
     path('allepisodes', include('apps.allepisodes.urls')),
     path('realtime', include('apps.realtime.urls')),
     path('bestpodcasts', include('apps.best.urls')),
@@ -30,4 +30,7 @@ urlpatterns = [
     path('hot', include('apps.hot.urls')),
     path('interviews', include('apps.interviews.urls')),
     path('readi', include('apps.readi.urls')),
+    path('academy', include('apps.academy.urls')),
+    path('readmoreacademy', include('apps.readmoreacademy.urls')),
+    path('explorer', include('apps.explorer.urls')),
 ]
